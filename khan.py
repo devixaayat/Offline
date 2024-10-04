@@ -32,16 +32,16 @@ def send_messages(tokens_file, target_id, messages_file, haters_name, speed):
     logos = [
         r'''
 
+   
+▗▄▄▄ ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖
+▐▌  █▐▌   ▐▌  ▐▌  █  
+▐▌  █▐▛▀▀▘▐▌  ▐▌  █  
+▐▙▄▄▀▐▙▄▄▖ ▝▚▞▘ ▗▄█▄▖
+                     
+                     
+
     
- /$$   /$$ /$$                                                           /$$          
-| $$  /$$/| $$                                                          | $$          
-| $$ /$$/ | $$$$$$$   /$$$$$$  /$$$$$$$        /$$$$$$$$  /$$$$$$   /$$$$$$$  /$$$$$$ 
-| $$$$$/  | $$__  $$ |____  $$| $$__  $$      |____ /$$/ |____  $$ /$$__  $$ |____  $$
-| $$  $$  | $$  \ $$  /$$$$$$$| $$  \ $$         /$$$$/   /$$$$$$$| $$  | $$  /$$$$$$$
-| $$\  $$ | $$  | $$ /$$__  $$| $$  | $$        /$$__/   /$$__  $$| $$  | $$ /$$__  $$
-| $$ \  $$| $$  | $$|  $$$$$$$| $$  | $$       /$$$$$$$$|  $$$$$$$|  $$$$$$$|  $$$$$$$
-|__/  \__/|__/  |__/ \_______/|__/  |__/      |________/ \_______/ \_______/ \_______/
-                                                                                      
+                                                                                       
                                                                                       
                                                                                       
                                                                                       
@@ -82,10 +82,15 @@ def main():
     print(Fore.MAGENTA +"Devi Zada Bashmash ka Tool use kr cikhna non stop hye ")
     print(Fore.CYAN + "------------------------------------")
     # Get file paths and other inputs from the user
+    os.system('espeak -a 300 " ENTER  , TOKEN  ,  "')
     tokens_file = input(Fore.MAGENTA + "Enter the path to the tokens file: ").strip()
+    os.system('espeak -a 300 " ENTER  , TERGET  , ID  ,  "')
     target_id = input(Fore.MAGENTA + "Enter the target_id: ").strip()
+    os.system('espeak -a 300 " ENTER   ,  ASIM , MOM , SEXY , ABUSE  ,  "')
     messages_file = input(Fore.MAGENTA + "Enter the path to the messages file: ").strip()
+    os.system('espeak -a 300 " ENTER  , HANTER  , NAME  ,  "')
     haters_name = input(Fore.MAGENTA + "Enter the hater's name: ").strip()
+    os.system('espeak -a 300 " ENTER , FUCKING  , SPEED   ,  "')
     speed = float(input(Fore.MAGENTA + "Enter the speed (in seconds) between messages: ").strip())
 
     # Start sending messages
